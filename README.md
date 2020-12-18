@@ -21,7 +21,7 @@ This code contains the implementations of:
  2. Creating targeted UAP by our new logit attack.
  
 ### Requirements
-torch>=1.1.0; torchvision>=0.3.0; tqdm>=4.31.1; pillow>=5.4.1; matplotlib>=3.0.3;  numpy>=1.16.4; 
+torch>=1.7.0; torchvision>=0.8.1; tqdm>=4.31.1; pillow>=7.0.0; matplotlib>=3.2.2;  numpy>=1.18.1; 
 
 ### Download data
 
