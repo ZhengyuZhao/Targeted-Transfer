@@ -25,7 +25,7 @@ torch>=1.1.0; torchvision>=0.3.0; tqdm>=4.31.1; pillow>=5.4.1; matplotlib>=3.0.3
 
 ### Download data
 
-Run [this official script](https://github.com/tensorflow/cleverhans/blob/master/examples/nips17_adversarial_competition/dataset/download_images.py) to download the ImageNet-Compatible dataset (1000 images).
+Run [this official script](https://github.com/tensorflow/cleverhans/blob/master/examples/nips17_adversarial_competition/dataset/download_images.py) to download the ImageNet-Compatible dataset (1000 images) along with the official metadata (ground truth and specified target classes).
 
 ### Experiments
 Code for all the experiments with comments can be found in the Jupyter Notebook file ```main.ipynb```.
