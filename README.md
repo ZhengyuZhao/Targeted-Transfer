@@ -31,7 +31,7 @@ Run [this official script](https://github.com/tensorflow/cleverhans/blob/master/
 Code for all the experiments with comments can be found in the Jupyter Notebook file ```main.ipynb```.
 
 ### Results
-For all experiments, L<sub>&infin;</sub>=16 is applied.
+#### For all experiments, L<sub>&infin;</sub>=16 is applied.
 
 Results of the single model transfer setting:
 <p align="center">
