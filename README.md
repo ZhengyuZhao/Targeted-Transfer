@@ -1,7 +1,7 @@
 ## About
 PyTorch code for our arXiv article:
 
-Zhengyu Zhao, Zhuoran Liu, Martha Larson, [**"On Success and Simplicity: A Second Look at Transferable Targeted Attacks"**](https://arxiv.org/abs/1911.02466), 2020.
+Zhengyu Zhao, Zhuoran Liu, Martha Larson, [**"On Success and Simplicity: A Second Look at Transferable Targeted Attacks"**](http://arxiv.org/abs/2012.11207), 2020.
 <!-- <p align="center">
   <img src="https://github.com/ZhengyuZhao/color_adversarial/blob/master/figures/figure1.PNG" width='600'>
 </p> -->
