@@ -8,8 +8,7 @@ Zhengyu Zhao, Zhuoran Liu, Martha Larson, [**"On Success and Simplicity: A Secon
 We take a second look at the transferability of targeted attacks and show that their difficulty has been overestimated due to a blind spot in the conventional evaluation procedures.
 Specifically, current work has unreasonably restricted attack optimization to a few iterations.
 Here, we show that targeted attacks converge slowly to optimal transferability and improve considerably when given more iterations.
-We also show that a simple logit attack performs surprisingly well, remarkably surpassing more complex losses and even achieving performance
-comparable to the state of the art, which requires massive training with sophisticated loss.
+We also show that a simple logit attack performs surprisingly well, even achieving good performance comparable to the state of the art, which requires massive training with a sophisticated multi-term loss.
 Additional experiments on attacking the Google Cloud Vision API and creating targeted Universal Adaversarial Perturbations (UAP) are also conducted.
 
 ## Implementation
