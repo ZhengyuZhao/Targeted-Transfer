@@ -16,8 +16,9 @@ Additional experiments on attacking the Google Cloud Vision API and creating tar
 ### Overview
 
 This code contains the implementations of:
- 1. Transferable targeted attacks in both the single model transfer setting and the ensemble transfer setting. 
- 2. Creating targeted UAP by our new logit attack.
+ 1. three transferable targeted attacks (CE, Po+Trip, and our Logit) in the single model transfer setting.
+ 2. our logit attack in the ensemble model transfer setting. 
+ 3. our logit attack for generating Universal Adversarial Perturbations (UAP).
  
 ### Requirements
 torch>=1.7.0; torchvision>=0.8.1; tqdm>=4.31.1; pillow>=7.0.0; matplotlib>=3.2.2;  numpy>=1.18.1; 
