@@ -5,11 +5,7 @@ Zhengyu Zhao, Zhuoran Liu, Martha Larson, [**"On Success and Simplicity: A Secon
 <!-- <p align="center">
   <img src="https://github.com/ZhengyuZhao/color_adversarial/blob/master/figures/figure1.PNG" width='600'>
 </p> -->
-We take a second look at the transferability of targeted attacks and show that their difficulty has been overestimated due to a blind spot in the conventional evaluation procedures.
-Specifically, current work has unreasonably restricted attack optimization to a few iterations.
-Here, we show that targeted attacks converge slowly to optimal transferability and improve considerably when given more iterations.
-We also show that a simple logit attack performs surprisingly well, even achieving good performance comparable to the state of the art, which requires massive training with a sophisticated multi-term loss.
-Additional experiments on attacking the Google Cloud Vision API and creating targeted Universal Adaversarial Perturbations (UAP) are also conducted.
+> **Abstract**: Achieving transferability of targeted attacks is reputed to be remarkably difficult. Currently, state-of-the-art approaches are resource-intensive because they necessitate training model(s) for each target class with additional data. In our investigation, we find, however, that simple transferable attacks which require neither additional data nor model training can achieve surprisingly high targeted transferability. This insight has been overlooked until now, mainly due to the widespread practice of unreasonably restricting attack optimization to a limited number of iterations. In particular, we, for the first time, identify that a simple logit loss can yield competitive results with the state of the arts. Our analysis spans a variety of transfer settings, especially including three new, realistic settings: an ensemble transfer setting with little model similarity, a worse-case setting with low-ranked target classes, and also a real-world attack against the Google Cloud Vision API. Results in these new settings demonstrate that the commonly adopted, easy settings cannot fully reveal the actual properties of different attacks and may cause misleading comparisons. We also show the usefulness of the simple logit loss for generating targeted universal adversarial perturbations in a data-free and training-free manner. Overall, the aim of our analysis is to inspire a more meaningful evaluation on targeted transferability.
 
 ## Implementation
 
