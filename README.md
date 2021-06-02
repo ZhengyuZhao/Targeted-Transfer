@@ -12,7 +12,7 @@ torch>=1.7.0; torchvision>=0.8.1; tqdm>=4.31.1; pillow>=7.0.0; matplotlib>=3.2.2
 
 ### Dataset
 
-The 1000 images of the ImageNet-Compatible dataset are provided in the folder ```dataset/images```, along with their metadata in  ```dataset/images.csv```, including the URLs, cropping bounding boxes, classification labels, etc. More details on this dataset can be found in its [official repository](https://github.com/tensorflow/cleverhans/blob/master/examples/nips17_adversarial_competition/dataset).
+The 1000 images of the ImageNet-Compatible dataset are provided in the folder ```dataset/images```, along with their metadata in  ```dataset/images.csv```, including the URLs, cropping bounding boxes, classification labels, etc. More details on this dataset can be found in its [official repository](https://github.com/cleverhans-lab/cleverhans/tree/master/cleverhans_v3.1.0/examples/nips17_adversarial_competition/dataset).
 
 ### Evaluation
 This code contains the implementations of three simple transferable targeted attacks (CE, Po+Trip, and Logit) in the following six settings.
