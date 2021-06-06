@@ -18,17 +18,17 @@ The 1000 images of the ImageNet-Compatible dataset are provided in the folder ``
 This code contains the implementations of three simple transferable targeted attacks (CE, Po+Trip, and Logit) in the following six settings.
 For all experiments, L<sub>&infin;</sub>=16 is applied.
 
-#### single-model transfer in ```eval_single.py```
+#### Single-model transfer in ```eval_single.py```
 <p align="left">
   <img src="https://github.com/ZhengyuZhao/Targeted-Tansfer/blob/main/Figures/transfer_single.PNG" width='700'>
 </p>
 
-#### ensemble transfer in ```eval_ensemble.py```
+#### Ensemble transfer in ```eval_ensemble.py```
 <p align="left">
   <img src="https://github.com/ZhengyuZhao/Targeted-Tansfer/blob/main/Figures/transfer_ensemble.PNG" width='700'>
 </p>
 
-#### a worse-case transfer setting with low-ranked targets in ```eval_low_ranked.py```
+#### A worse-case transfer setting with low-ranked targets in ```eval_low_ranked.py```
 <p align="left">
   <img src="https://github.com/ZhengyuZhao/Targeted-Tansfer/blob/main/Figures/transfer_low_ranked.PNG" width='400'>
 </p>
@@ -38,12 +38,12 @@ For all experiments, L<sub>&infin;</sub>=16 is applied.
   <img src="https://github.com/ZhengyuZhao/Targeted-Tansfer/blob/main/Figures/transfer_10_targets.PNG" width='400'>
 </p>
 
-#### undounded setting to compare with FDA, which is based on training target class-specific auxiliary binary classifier(s) in ```eval_unbounded.py```
+#### Undounded setting to compare with FDA, which is based on training target class-specific auxiliary binary classifier(s) in ```eval_unbounded.py```
 <p align="left">
   <img src="https://github.com/ZhengyuZhao/Targeted-Tansfer/blob/main/Figures/transfer_unbounded.PNG" width='700'>
 </p>
 
-#### generating targeted UAPs in ```eval_tUAP.py``` 
+#### Generating targeted UAPs in ```eval_tUAP.py``` 
 <p align="left">
   <img src="https://github.com/ZhengyuZhao/Targeted-Tansfer/blob/main/Figures/transfer_tUAP.PNG" width='300'>
 </p>
