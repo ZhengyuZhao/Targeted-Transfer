@@ -33,12 +33,12 @@ For all experiments, L<sub>&infin;</sub>=16 is applied.
   <img src="https://github.com/ZhengyuZhao/Targeted-Tansfer/blob/main/Figures/transfer_low_ranked.PNG" width='400'>
 </p>
 
-#### "10-Targets" setting to compare with TTP, which is based on training target class-specific GANs in ```eval_10_targets.py```
+#### "10-Targets" setting to compare with TTP, which is based on training target class-specific GANs, in ```eval_10_targets.py```
 <p align="left">
   <img src="https://github.com/ZhengyuZhao/Targeted-Tansfer/blob/main/Figures/transfer_10_targets.PNG" width='400'>
 </p>
 
-#### Undounded setting to compare with FDA, which is based on training target class-specific auxiliary binary classifier(s) in ```eval_unbounded.py```
+#### Undounded setting to compare with FDA, which is based on training target class-specific auxiliary binary classifier(s), in ```eval_unbounded.py```
 <p align="left">
   <img src="https://github.com/ZhengyuZhao/Targeted-Tansfer/blob/main/Figures/transfer_unbounded.PNG" width='700'>
 </p>
