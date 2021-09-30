@@ -5,7 +5,15 @@ PyTorch code for our paper:
 <!-- <p align="center">
   <img src="https://github.com/ZhengyuZhao/color_adversarial/blob/master/figures/figure1.PNG" width='600'>
 </p> -->
-> **Abstract**: Achieving transferability of targeted attacks is reputed to be remarkably difficult. Currently, state-of-the-art approaches are resource-intensive because they necessitate training model(s) for each target class with additional data. In our investigation, we find, however, that simple transferable attacks which require neither additional data nor model training can achieve surprisingly high targeted transferability. This insight has been overlooked until now, mainly due to the widespread practice of unreasonably restricting attack optimization to a limited number of iterations. In particular, we, for the first time, identify that a simple logit loss can yield competitive results with the state of the arts. Our analysis spans a variety of transfer settings, especially including three new, realistic settings: an ensemble transfer setting with little model similarity, a worse-case setting with low-ranked target classes, and also a real-world attack against the Google Cloud Vision API. Results in these new settings demonstrate that the commonly adopted, easy settings cannot fully reveal the actual properties of different attacks and may cause misleading comparisons. We also show the usefulness of the simple logit loss for generating targeted universal adversarial perturbations in a data-free and training-free manner. Overall, the aim of our analysis is to inspire a more meaningful evaluation on targeted transferability.
+> **Abstract**: Achieving transferability of targeted attacks is reputed to be remarkably difficult.
+The current state of the art has resorted to resource-intensive solutions that necessitate training model(s) for each target class with additional data.
+In our investigation, we find, however, that simple transferable attacks which require neither additional data nor model training can achieve surprisingly strong targeted transferability.
+This insight has been overlooked until now, mainly because the widespread practice of attacking with only few iterations has largely limited the attack convergence to optimal targeted transferability.
+In particular, we, for the first time, identify that a very simple logit loss can yield even better results than the resource-intensive state of the art.
+Our analysis spans a variety of transfer scenarios, especially including three new, realistic scenarios: an ensemble transfer scenario with little model similarity, a worse-case scenario with attacks targeting low-ranked classes, and also a real-world attack on the Google Cloud Vision API.
+Results in these new transfer scenarios demonstrate that the commonly adopted, easy scenario cannot fully reveal the actual properties of different attacks and may cause misleading comparisons.
+We also show the usefulness of the simple logit loss for generating targeted universal adversarial perturbations in a data-free manner.
+Overall, the aim of our analysis is to inspire a more meaningful evaluation on targeted transferability.
 
 ### Requirements
 torch>=1.7.0; torchvision>=0.8.1; tqdm>=4.31.1; pillow>=7.0.0; matplotlib>=3.2.2;  numpy>=1.18.1; 
