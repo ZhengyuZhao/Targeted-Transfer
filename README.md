@@ -3,15 +3,8 @@ PyTorch code for our **NeurIPS 2021** paper:
 
 [**"On Success and Simplicity: A Second Look at Transferable Targeted Attacks"**](http://arxiv.org/abs/2012.11207). Zhengyu Zhao, Zhuoran Liu, Martha Larson.
 
-> **Abstract**: Achieving transferability of targeted attacks is reputed to be remarkably difficult.
-The current state of the art has resorted to resource-intensive solutions that necessitate training model(s) for each target class with additional data.
-In our investigation, we find, however, that simple transferable attacks which require neither additional data nor model training can achieve surprisingly strong targeted transferability.
-This insight has been overlooked until now, mainly because the widespread practice of attacking with only few iterations has largely limited the attack convergence to optimal targeted transferability.
-In particular, we, for the first time, identify that a very simple logit loss can yield even better results than the resource-intensive state of the art.
-Our analysis spans a variety of transfer scenarios, especially including three new, realistic scenarios: an ensemble transfer scenario with little model similarity, a worse-case scenario with attacks targeting low-ranked classes, and also a real-world attack on the Google Cloud Vision API.
-Results in these new transfer scenarios demonstrate that the commonly adopted, easy scenario cannot fully reveal the actual properties of different attacks and may cause misleading comparisons.
-We also show the usefulness of the simple logit loss for generating targeted universal adversarial perturbations in a data-free manner.
-Overall, the aim of our analysis is to inspire a more meaningful evaluation on targeted transferability.
+> **TL;DR**: We demonstrate that a surprisingly simple attack approach can achieve even better *targeted* transferability than the state-of-the-art resource-intensive approaches.
+
 
 ### Requirements
 torch>=1.7.0; torchvision>=0.8.1; tqdm>=4.31.1; pillow>=7.0.0; matplotlib>=3.2.2;  numpy>=1.18.1; 
