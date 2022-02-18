@@ -3,7 +3,7 @@ PyTorch code for our **NeurIPS 2021** paper:
 
 [**"On Success and Simplicity: A Second Look at Transferable Targeted Attacks"**](http://arxiv.org/abs/2012.11207). Zhengyu Zhao, Zhuoran Liu, Martha Larson.
 
-> **TL;DR**: We demonstrate that a surprisingly simple attack approach can achieve even better *targeted* transferability than the state-of-the-art resource-intensive approaches.
+> **TL;DR**: We demonstrate that the conventional simple, iterative attacks can actually achieve even better *targeted* transferability than the SOTA, resource-intensive attacks when enough iterations are used for proper convergence and the widely-used Cross-Entropy loss is replaced by a simpler Logit loss.
 
 
 ### Requirements
