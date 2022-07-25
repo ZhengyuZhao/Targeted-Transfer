@@ -95,18 +95,18 @@ def normalize(t):
     return t
 
 if args.num_targets==10:
-    targets = [24,99,245,344,471,555,661,701,802,919]
+    targets = [24, 99, 245, 344, 471, 555, 661, 701, 802, 919]
 if args.num_targets==100:
     targets = [24, 99, 245, 344, 471, 555, 661, 701, 802, 919, 3, 16, 36, 48, 52, 69, 71, 85, 107, 114, 130, 138, 142, 151, 162, 178, 189, 193, 207, 212, 228, 240, 260, 261, 276, 285, 291, 309, 317, 328, 340, 358, 366, 374, 390, 393, 404, 420, 430, 438, 442, 453, 464, 485, 491, 506, 513, 523, 538, 546, 569, 580, 582, 599, 605, 611, 629, 638, 646, 652, 678, 689, 707, 717, 724, 735, 748, 756, 766, 779, 786, 791, 813, 827, 836, 849, 859, 866, 879, 885, 893, 901, 929, 932, 946, 958, 963, 980, 984, 992]
 
 total_acc = 0
 total_samples = 0
-batch_size=args.batch_size
+batch_size = args.batch_size
 num_batches = 1000//batch_size
 test_dir = args.test_dir
 image_id_list = list(filter(lambda x: '.png' in x, os.listdir(test_dir)))
 
-test_size=len(image_id_list)
+test_size = len(image_id_list)
 for idx, target in enumerate(targets):
     logger.info('Epsilon \t Target \t Acc. \t Distance')
 
@@ -116,12 +116,12 @@ for idx, target in enumerate(targets):
     netG.eval()
 
     # Reset Metrics
-    acc=0
+    acc = 0
     distance = 0
     for k in tqdm_notebook(range(0,num_batches)):
         X_ori = torch.zeros(batch_size,3,img_size,img_size).to(device)
         for i in range(batch_size):          
-            X_ori[i]=data_transform(Image.open(test_dir+image_id_list[k*batch_size+i])) 
+            X_ori[i] = data_transform(Image.open(test_dir+image_id_list[k*batch_size+i])) 
         target_label = torch.LongTensor(img.size(0))
         target_label.fill_(target)
         target_label = target_label.to(device)
