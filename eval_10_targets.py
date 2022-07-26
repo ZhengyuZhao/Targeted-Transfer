@@ -118,7 +118,7 @@ for idx, target in enumerate(targets):
     # Reset Metrics
     acc = 0
     distance = 0
-    for k in tqdm_notebook(range(0,num_batches)):
+    for k in range(0,num_batches):
         X_ori = torch.zeros(batch_size,3,img_size,img_size).to(device)
         for i in range(batch_size):          
             X_ori[i] = data_transform(Image.open(test_dir+image_id_list[k*batch_size+i])) 
