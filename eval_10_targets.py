@@ -17,6 +17,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
+from PIL import Image
 
 import torchvision.models as models
 from generators import GeneratorResnet
