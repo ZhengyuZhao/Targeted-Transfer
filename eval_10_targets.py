@@ -120,9 +120,9 @@ for idx, target in enumerate(targets):
     acc = 0
     distance = 0
     for k in range(0,num_batches):
-        X_ori = torch.zeros(batch_size,3,img_size,img_size).to(device)
+        img = torch.zeros(batch_size,3,img_size,img_size).to(device)
         for i in range(batch_size):          
-            X_ori[i] = data_transform(Image.open(test_dir+image_id_list[k*batch_size+i])) 
+            img[i] = data_transform(Image.open(test_dir+image_id_list[k*batch_size+i])) 
         target_label = torch.LongTensor(img.size(0))
         target_label.fill_(target)
         target_label = target_label.to(device)
